@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0">
+    <style type="text/css">
+
+.secondaryPictureContainer{
+  background-color: #d5c75f;
+  border: 1px solid;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.secondaryPictureItem{
+  width: 50%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.secondaryPictureItem img{
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+@media screen and (max-width: 900px){
+
+.secondaryPictureContainer{
+      flex-flow: column nowrap !important;
+    }
+
+    .secondaryPictureItem{
+      width: 100% !important;
+    }
+
+  }
+    </style>
+    <title></title>
+  </head>
+  <body>
+      <section>
+        <article>
+            <div class="secondaryPictureContainer">
+              <div class="secondaryPictureItem">
+                <a href="landscapes.html">
+                  <img id="secondaryPictureLeft" src="media/landscape_2.jpg" alt="">
+                  <center>Paisajes</center>
+                </a>
+              </div>
+              <div class="secondaryPictureItem">
+                <a href="portraits.html">
+                  <img id="secondaryPictureRight" src="media/portrait_1.jpg" alt="">
+                  <center>Retratos</center>
+                </a>
+              </div>
+            </div>
+        </article>
+      </section>
+      <svg></svg>
+  </body>
+</html>
